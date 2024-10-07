@@ -58,7 +58,6 @@ fun MovieItem(movie: Movie, onClick: () -> Unit) {
             Column(modifier = Modifier.fillMaxWidth()) {
                 Text(text = movie.title, style = MaterialTheme.typography.titleMedium)
                 Spacer(modifier = Modifier.height(8.dp))
-                Text(text = movie.overview, style = MaterialTheme.typography.bodyMedium, maxLines = 3)
             }
         }
     }
