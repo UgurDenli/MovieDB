@@ -63,6 +63,15 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.navigation.testing)
+    testImplementation(libs.androidx.ui.test.junit4.android)
+
+    androidTestImplementation (libs.ui.test.junit4)
+    debugImplementation (libs.ui.test.manifest)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline)
+    testImplementation(libs.robolectric)
 
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
