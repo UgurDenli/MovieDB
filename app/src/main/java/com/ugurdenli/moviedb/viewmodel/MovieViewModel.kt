@@ -13,11 +13,14 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
     private val _movies = MutableStateFlow<List<Movie>>(emptyList())
     val movies: StateFlow<List<Movie>> get() = _movies
 
-    fun fetchPopularMovies(apiKey: String) {
+    init {
+        fetchPopularMovies("ee1d5e7bab063649084ba04149ea8600")
+    }
+
+    private fun fetchPopularMovies(apiKey: String) {
         viewModelScope.launch {
             try {
                 val movieList = repository.fetchPopularMovies(apiKey)
-                Log.d("MovieViewModel", "Fetched movies: $movieList")
                 _movies.value = movieList
             } catch (e: Exception) {
                 Log.e("MovieViewModel", "Error fetching movies", e)
