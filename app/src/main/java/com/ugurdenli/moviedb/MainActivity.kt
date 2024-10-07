@@ -17,6 +17,7 @@ import com.ugurdenli.moviedb.ui.theme.MovieDBTheme
 import com.ugurdenli.moviedb.viewmodel.MovieViewModel
 import com.ugurdenli.moviedb.viewmodel.MovieViewModelFactory
 import com.ugurdenli.moviedb.repository.MovieRepository
+import com.ugurdenli.moviedb.ui.LatestMoviesScreen
 import com.ugurdenli.moviedb.ui.MovieDetailScreen
 import java.net.URLDecoder
 import java.net.URLEncoder
@@ -34,7 +35,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             MovieDBTheme {
                 val navController = rememberNavController()
-                NavHost(navController, startDestination = "movieList") {
+                NavHost(navController, startDestination = "latestMovies") {
+                    composable("latestMovies") {
+                        LatestMoviesScreen(navController)
+                    }
                     composable("movieList") {
                         MovieListScreen(viewModel) { movie ->
                             val movieJson = URLEncoder.encode(Gson().toJson(movie), StandardCharsets.UTF_8.toString())

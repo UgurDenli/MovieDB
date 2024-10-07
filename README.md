@@ -25,3 +25,16 @@ https://gyazo.com/198fc4206c40751977811e071c4ebb19
 - [Coil](https://coil-kt.github.io/coil/)
 - [Gson](https://github.com/google/gson)
 - [TMDB API](https://www.themoviedb.org/documentation/api)
+
+
+## Improvements
+- String Resources: Move hardcoded strings to `strings.xml` for better localization support.
+- Error Handling: Implement comprehensive error handling for network requests and user interactions.
+- UI Enhancements: Improve the UI/UX with animations, better layouts, and more responsive design.
+- Caching: Implement caching mechanisms to reduce network calls and improve performance.
+- Dark Mode: Add support for dark mode to enhance user experience.
+- Accessibility: Improve accessibility features, such as content descriptions and focus management.
+- Code Refactoring: Refactor code to follow best practices and improve readability and maintainability.
+- Performance Optimization: Optimize performance by profiling and addressing bottlenecks.
+- Feature Enhancements: Add more features like search functionality, user authentication, and movie reviews.
+- Translations: Add support for multiple languages to make the app accessible to a wider audience.
