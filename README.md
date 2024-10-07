@@ -15,7 +15,7 @@ https://gyazo.com/198fc4206c40751977811e071c4ebb19
 
 ## Usage
 
-- On the main screen, you will see a list of popular movies.
+- On the main screen, you will see a button for a list of popular movies and recent movies.
 - Click on any movie to view its details.
 - Use the back button to return to the movie list.
 
